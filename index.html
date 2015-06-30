@@ -11,24 +11,17 @@
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <script type="application/javascript" src="./min_href.js"></script>
-    <script type="application/javascript">
-      setTimeout(function() {
-          if (
-              (
-                  document.body.style.marginTop === "" ||
-                  document.body.style.marginTop === "0px"
-              ) &&
-              (
-                  document.body.style.marginBottom === "" ||
-                  document.body.style.marginBottom === "0px"
-              )
-          ) {
-              document.body.style.transition = (1/4)+"s ease-in-out";
-              document.body.style.marginBottom = "3%";
-              document.body.style.marginTop = "3%";
+    <style>
+      body {
+          padding-top: 60px;
+      }
+      @media(max-width: 980px) {
+          body {
+              /*padding-top: 0;*/
+              padding-top: 100px;
           }
-      }, 1 * 1000);
-    </script>
+      }
+    </style>
     <script type="application/javascript">
       // NavyCommanders COL_Formatter!
       $.fn.col_format = function() {
