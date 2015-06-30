@@ -1,0 +1,22 @@
+doctype html
+html(lang='en')
+  head
+    -var creator="Nicholas J. Phillips";
+    -var min_href="index.min.html";
+    -var pname="San Antonio, FL :: Math Train";
+    include ./metadata.jade
+    include ./modules.jade
+    title Preview
+  body
+    include ./bootstrap.jade
+    .container
+        .row
+            .col
+                h1.text-center Preview
+        .row
+            .col
+                h3.text-center What is this about???
+                include:marked about1.md
+            .col
+                iframe(width='300', height='150', frameborder='0', style='border:0', src='https://www.google.com/maps/embed/v1/place?q=28.343595%2C%20-82.275154&key=AIzaSyCL54cFZJLF36rYdAHklbnS_tj5-hRJLIc')
+    include ./footer.jade
