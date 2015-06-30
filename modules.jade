@@ -4,27 +4,23 @@ script(src="http://code.jquery.com/jquery.min.js")
 script(src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.16/require.min.js")
 //- Bootstrap [rel]
 script(src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js")
-link(rel="stylesheet", href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css")
+//- THEMES --------------- 
+//- Standard Theme
+//- link(rel="stylesheet", href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css")
+
+//- Flatly Theme
+//- link(rel="stylesheet", type="text/css", href="https://bootswatch.com/flatly/bootstrap.min.css")
+
+//- Cosmo Theme
+link(rel="stylesheet", type="text/css", href="https://bootswatch.com/cosmo/bootstrap.min.css")
+
+//- Cerulean Theme
+//- link(rel="stylesheet", type="text/css", href="https://bootswatch.com/cerulean/bootstrap.min.css")
+
+//- Cyborg Theme
+//- link(rel="stylesheet", type="text/css", href="https://bootswatch.com/cyborg/bootstrap.min.css")  
+//- ---------------------------- 
 //- Your scripts
-script(type="application/javascript", src="./min_href.js")
-//- Bootstrap [> BODY <] sizer
-//- script(type="application/javascript").
-//-     setTimeout(function() {
-//-         if (
-//-             (
-//-                 document.body.style.marginTop === "" ||
-//-                 document.body.style.marginTop === "0px"
-//-             ) &&
-//-             (
-//-                 document.body.style.marginBottom === "" ||
-//-                 document.body.style.marginBottom === "0px"
-//-             )
-//-         ) {
-//-             document.body.style.transition = (1/4)+"s ease-in-out";
-//-             document.body.style.marginBottom = "3%";
-//-             document.body.style.marginTop = "3%";
-//-         }
-//-     }, 1 * 1000);
 style.
       body {
           transition:1s ease-in-out;

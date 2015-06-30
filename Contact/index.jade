@@ -4,20 +4,20 @@ html(lang='en')
     -var creator="Nicholas J. Phillips";
     -var min_href="index.min.html";
     -var pname="San Antonio, FL :: Math Train";
-    -var title="Math Train :: Landing Page"
-    include ./metadata.jade
-    include ./modules.jade
+    -var title="Math Train :: Contact"
+    include ../metadata.jade
+    include ../modules.jade
     title= title
   body
-    include ./bootstrap.jade
+    include ../bootstrap.jade
     .container
         .row
             .col
-                h1.text-center Landing Page...
-        .row
+                h2.text-center Who to contact?
+                h3.text-center
+                    i Sarah Christiansen
             .col
-                h3.text-center What is this about???
-                include:marked about1.md
-            .col
+                h2.text-center Where it all happens!
+                h3.text-center Google Maps [Location]
                 iframe(width='450', height='350', frameborder='0', style='border:0', src='https://www.google.com/maps/embed/v1/place?q=28.343595%2C%20-82.275154&key=AIzaSyCL54cFZJLF36rYdAHklbnS_tj5-hRJLIc')
-    include ./footer.jade
+    include ../footer.jade
