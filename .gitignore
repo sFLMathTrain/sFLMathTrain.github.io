@@ -1,0 +1,31 @@
+### Archives
+*.7z
+*.jar
+*.rar
+*.zip
+*.gz
+*.bzip
+*.bz2
+*.xz
+*.lzma
+*.cab
+*.iso
+*.tar
+*.dmg
+*.xpi
+*.gem
+*.egg
+*.deb
+*.rpm
+*.msi
+*.msm
+*.msp
+
+### Node Modules
+node_modules/*
+
+### jQuery-*
+jquery-*/*
+
+### Prepros
+prepros.cfg

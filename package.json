@@ -1,0 +1,19 @@
+{
+  "name": "sFLMathTrain.github.io",
+  "version": "1.0.0",
+  "description": "San Antonio, FL | Math Train (camp|activity)",
+  "main": "node.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sFLMathTrain/sFLMathTrain.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sFLMathTrain/sFLMathTrain.github.io/issues"
+  },
+  "homepage": "https://github.com/sFLMathTrain/sFLMathTrain.github.io"
+}

@@ -1,23 +1,33 @@
-doctype html
+doctype
 html(lang='en')
   head
     -var creator="Nicholas J. Phillips";
     -var min_href="index.min.html";
-    -var pname="San Antonio, FL :: Math Train";
-    -var title="Math Train :: Landing Page"
+    -var pname="San Antonio,FL :: Math Train";
+    -var title="Math Train :: Landing Page";
+    
     include ./metadata.jade
     include ./modules.jade
+    
     title= title
   body
     include ./bootstrap.jade
     .container
         .row
-            .col
-                h1.text-center Landing Page...
+            .col(style={"text-align":"center"})
+                //- span.hvr-float-shadow(style='font-size:-webkit-xxx-large;margin-bottom:1%;') Welcome to my Website!
+                h1.hvr-float-shadow(style='margin-bottom:1%;') Welcome to my Website!
+
         .row
-            .col
-                h3.text-center What is this about???
-                include:markdown about1.md
-            .col
-                iframe(width='450', height='350', frameborder='0', style='border:0', src='https://www.google.com/maps/embed/v1/place?q=28.343595%2C%20-82.275154&key=AIzaSyCL54cFZJLF36rYdAHklbnS_tj5-hRJLIc')
+            .col(style={"text-align":"center"})
+                div(style='display:inline-grid;')
+                    a.btn.btn-success.hvr-underline-from-center(href="https://maps.google.com/maps?ll=28.343595,-82.275154",style='margin-bottom:5px;font-size:x-large;') Where it all takes place!
+                iframe(width='450',height='350',frameborder='0',style='border:0',src='https://www.google.com/maps/embed/v1/place?q=28.343595%2C%20-82.275154&key=AIzaSyCL54cFZJLF36rYdAHklbnS_tj5-hRJLIc')
+            .col(style={"text-align":"center"})
+                div(style='display:inline-grid;')
+                    a.btn.btn-success.hvr-underline-from-center(href='http://MathNotepad.com/',style='margin-bottom:5px;font-size:x-large;') Math Notepad
+                div(width='450',height='350',class="mathnotepad-embed",data-contents="N4Igdg9gJgpgziAXAbVDAHgBwE5JCAGhEwENsSBbBFAXQF96g%3D%3D%3D")
+                script(src="http://mathnotepad.com/embed.min.js",async)
+    
     include ./footer.jade
+    include ./modules2.jade
